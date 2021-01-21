@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
 import _ from 'lodash';
+import '@fontsource/love-ya-like-a-sister';
 
 const Header = ({ children }) => (
-  <h2 className="uppercase text-8xl py-10 text-red-500">{children}</h2>
+  <h2 className="uppercase text-8xl py-10 text-red-500 font-sister">{children}</h2>
 );
 
 const Nags = () => {
-  const [cat, setCat] = useState('');
-
   const url = () => `https://placekitten.com/${_.random(400, 600)}/${_.random(400, 600)}`;
+
+  const [cat, setCat] = useState(url());
 
   useEffect(() => {
     setTimeout(() => {
