@@ -7,7 +7,7 @@ const Header = ({ children }) => (
 );
 
 const Nags = () => {
-  const url = () => `https://placekitten.com/${_.random(400, 600)}/${_.random(400, 600)}`;
+  const url = () => `https://placekitten.com/${_.random(400, 1000)}/${_.random(400, 1000)}`;
 
   const [cat, setCat] = useState(url());
 
